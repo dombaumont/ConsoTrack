@@ -4,17 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Confidentialité – ConsoTrack</title>
-<meta name="description" content="Politique de confidentialité de l’application ConsoTrack.">
+<meta name="description" content="Politique de confidentialité de l’application ConsoTrack · ConsoTrack privacy policy · Política de privacidad de ConsoTrack.">
 <meta name="robots" content="noindex, nofollow, nosnippet, noarchive">
+<link rel="icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <h1>Politique de confidentialité</h1>
-  <p class="meta">Application ConsoTrack pour iPhone, iPad, Mac et Apple Watch · Dernière mise à jour : 15 octobre 2026</p>
+  <div class="topbar">
+    <a class="brand" href="index.html" data-keep-lang><img src="assets/icon.png" alt="" width="32" height="32">ConsoTrack</a>
+    <div class="languages" aria-label="Language">
+      <button data-lang-button="fr" aria-label="Français">🇫🇷 <span>FR</span></button>
+      <button data-lang-button="en" aria-label="English">🇬🇧 <span>EN</span></button>
+      <button data-lang-button="es" aria-label="Español">🇪🇸 <span>ES</span></button>
+    </div>
+  </div>
 
-  <section class="summary" aria-labelledby="resume">
-    <h2 id="resume">En bref</h2>
+  <!-- ===================== FRANÇAIS ===================== -->
+  <article class="doc" lang="fr" data-title="Confidentialité – ConsoTrack">
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Application ConsoTrack pour iPhone, iPad, Mac, Apple Watch et Apple TV · Dernière mise à jour : 16 octobre 2026</p>
+
+  <section class="summary">
+    <h2>En bref</h2>
     <ul>
       <li>ConsoTrack ne demande aucun compte et n’affiche aucune publicité.</li>
       <li>Vos relevés, achats, tarifs, objectifs et réglages sont enregistrés sur votre appareil et, si vous l’activez, dans votre iCloud privé. L’éditeur ne les reçoit jamais.</li>
@@ -49,31 +61,11 @@
   <table>
     <thead><tr><th scope="col">Information</th><th scope="col">Sources</th><th scope="col">Ce qui est envoyé</th></tr></thead>
     <tbody>
-      <tr>
-        <td>Commune et coordonnées du logement</td>
-        <td>geo.api.gouv.fr (France), Open-Meteo Geocoding (autres pays)</td>
-        <td>Le code postal saisi dans la fiche logement.</td>
-      </tr>
-      <tr>
-        <td>Météo passée et prévisions</td>
-        <td>Open-Meteo</td>
-        <td>Les coordonnées approximatives de la commune (pas votre position GPS).</td>
-      </tr>
-      <tr>
-        <td>Prix des carburants</td>
-        <td>data.economie.gouv.fr (France), Ministerio para la Transición Ecológica (Espagne), flux ouverts des distributeurs (Royaume-Uni), EIA (États-Unis)</td>
-        <td>Le code postal ou la région, et le carburant recherché.</td>
-      </tr>
-      <tr>
-        <td>Tarifs réglementés, couleur Tempo, mix électrique, données gaz</td>
-        <td>ODRE (RTE, Enedis, GRDF), CRE, api-couleur-tempo.fr, GRDF Open Data, Red Eléctrica, Elia, Carbon Intensity API, Octopus Energy, EIA</td>
-        <td>Rien sur vous : seulement la date ou la zone demandée.</td>
-      </tr>
-      <tr>
-        <td>Comparaison avec des foyers similaires (France)</td>
-        <td>ODRE (consommations publiées par intercommunalité, Enedis et GRDF)</td>
-        <td>Le code de votre intercommunalité. La comparaison avec votre consommation se fait sur l’appareil.</td>
-      </tr>
+      <tr><td>Commune et coordonnées du logement</td><td>geo.api.gouv.fr (France), Open-Meteo Geocoding (autres pays)</td><td>Le code postal saisi dans la fiche logement.</td></tr>
+      <tr><td>Météo passée et prévisions</td><td>Open-Meteo</td><td>Les coordonnées approximatives de la commune (pas votre position GPS).</td></tr>
+      <tr><td>Prix des carburants</td><td>data.economie.gouv.fr (France), Ministerio para la Transición Ecológica (Espagne), flux ouverts des distributeurs (Royaume-Uni), EIA (États-Unis)</td><td>Le code postal ou la région, et le carburant recherché.</td></tr>
+      <tr><td>Tarifs réglementés, couleur Tempo, mix électrique, données gaz</td><td>ODRE (RTE, Enedis, GRDF), CRE, api-couleur-tempo.fr, GRDF Open Data, Red Eléctrica, Elia, Carbon Intensity API, Octopus Energy, EIA</td><td>Rien sur vous : seulement la date ou la zone demandée.</td></tr>
+      <tr><td>Comparaison avec des foyers similaires (France)</td><td>ODRE (consommations publiées par intercommunalité, Enedis et GRDF)</td><td>Le code de votre intercommunalité. La comparaison avec votre consommation se fait sur l’appareil.</td></tr>
     </tbody>
   </table>
   </div>
@@ -88,10 +80,11 @@
     <li><strong>Micro et reconnaissance vocale</strong> : ils servent à dicter une valeur. La reconnaissance est faite sur l’appareil quand c’est possible ; sinon, l’extrait audio est traité par Apple selon ses conditions. Rien n’est conservé par l’application.</li>
   </ul>
 
-  <h2>7. Notifications, widgets, Apple Watch et verrouillage</h2>
+  <h2>7. Notifications, widgets, Apple Watch, Apple TV et verrouillage</h2>
   <ul>
     <li><strong>Notifications</strong> : les rappels de relevé et les alertes d’objectif sont programmés sur l’appareil. Aucun serveur n’est utilisé.</li>
     <li><strong>Widgets et Apple Watch</strong> : ils affichent un résumé préparé par l’application sur votre iPhone ou votre Mac ; la montre le reçoit directement de votre iPhone.</li>
+    <li><strong>Apple TV</strong> : l’application affiche les données saisies sur vos autres appareils, reçues uniquement de votre iCloud privé.</li>
     <li><strong>Verrouillage</strong> : Face ID, Touch ID ou le code de l’appareil sont vérifiés par le système. L’application ne reçoit aucune donnée biométrique.</li>
   </ul>
 
@@ -117,7 +110,197 @@
   <h2>12. Modifications</h2>
   <p>Cette politique peut évoluer avec l’application. La date de dernière mise à jour figure en haut de cette page.</p>
 
-  <footer><a href="index.html">ConsoTrack</a><a href="conditions.html">Conditions d’utilisation</a></footer>
+  <footer><a href="index.html" data-keep-lang>ConsoTrack</a><a href="conditions.html" data-keep-lang>Conditions d’utilisation</a></footer>
+  </article>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <article class="doc" lang="en" data-title="Privacy – ConsoTrack">
+  <h1>Privacy Policy</h1>
+  <p class="meta">ConsoTrack app for iPhone, iPad, Mac, Apple Watch and Apple TV · Last updated: October 16, 2026</p>
+
+  <section class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>ConsoTrack requires no account and shows no ads.</li>
+      <li>Your readings, purchases, rates, goals and settings are stored on your device and, if you turn it on, in your private iCloud. The developer never receives them.</li>
+      <li>The app contains no analytics or advertising tracking tools.</li>
+      <li>For some public information (fuel prices, weather, regulated rates…), the app queries open data services. They receive at most your postal code, never your consumption.</li>
+    </ul>
+  </section>
+
+  <h2>1. Developer and contact</h2>
+  <p>ConsoTrack is published by <strong>Dominique BAUMONT</strong>, as an individual. The developer is responsible for processing the messages sent to them.</p>
+  <p>For any question about your data: <a href="mailto:support.consotrack@free.fr">support.consotrack@free.fr</a>.</p>
+  <p>The developer runs no server for ConsoTrack and collects no personal data about its users.</p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>To work, the app stores on your device:</p>
+  <ul>
+    <li>your consumption categories (electricity, gas, water, fuel, wood…) and their sub-meters;</li>
+    <li>your meter readings, purchases, stock withdrawals, notes and, if you take them, photos of your meters;</li>
+    <li>your rates, standing charges, spending goals and reminders;</li>
+    <li>your home profile if you fill it in (country, postal code, town, floor area, number of people, appliances…);</li>
+    <li>your settings (theme, language, display, lock…).</li>
+  </ul>
+  <p>This data stays under your control. You can export or erase it from Settings › Data &amp; export. Deleting the app erases it from the device.</p>
+
+  <h2>3. iCloud (optional)</h2>
+  <p>If iCloud sync is turned on, your ConsoTrack data is copied to <strong>your private iCloud storage</strong>, managed by Apple, so it is available on your other devices. The developer has no access to it. Meter photos stay on the device that took them.</p>
+  <p>You can turn sync off in Settings › iCloud &amp; sync. To delete your data from iCloud: iPhone Settings › your name › iCloud › Manage Storage › ConsoTrack.</p>
+
+  <h2>4. External services used</h2>
+  <p>These services are only contacted when the information is requested (by you or by the assistant), depending on the country of your home. As with any Internet connection, each one sees your connection’s IP address. <strong>None of them receives your readings or your spending.</strong></p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Information</th><th scope="col">Sources</th><th scope="col">What is sent</th></tr></thead>
+    <tbody>
+      <tr><td>Town and coordinates of your home</td><td>geo.api.gouv.fr (France), Open-Meteo Geocoding (other countries)</td><td>The postal code entered in your home profile.</td></tr>
+      <tr><td>Past weather and forecasts</td><td>Open-Meteo</td><td>The approximate coordinates of the town (not your GPS position).</td></tr>
+      <tr><td>Fuel prices</td><td>data.economie.gouv.fr (France), Ministerio para la Transición Ecológica (Spain), retailers’ open feeds (United Kingdom), EIA (United States)</td><td>The postal code or region, and the fuel searched for.</td></tr>
+      <tr><td>Regulated rates, Tempo colour, electricity mix, gas data</td><td>ODRE (RTE, Enedis, GRDF), CRE, api-couleur-tempo.fr, GRDF Open Data, Red Eléctrica, Elia, Carbon Intensity API, Octopus Energy, EIA</td><td>Nothing about you: only the date or area requested.</td></tr>
+      <tr><td>Comparison with similar households (France)</td><td>ODRE (consumption published by inter-municipality, Enedis and GRDF)</td><td>Your inter-municipality code. The comparison with your consumption is done on the device.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Fuel station maps open in Apple Maps, under Apple’s terms.</p>
+
+  <h2>5. Assistant and artificial intelligence</h2>
+  <p>The assistant and summaries run on <strong>Apple Intelligence</strong>, entirely on your device: your questions and data are not sent to any artificial intelligence service. Without Apple Intelligence, the answers are calculated by the app itself, on the device.</p>
+
+  <h2>6. Camera, microphone and speech recognition</h2>
+  <ul>
+    <li><strong>Camera</strong>: used to read a meter. The image is analysed on the device. The meter photo is only kept if you save the reading, and only on the device.</li>
+    <li><strong>Microphone and speech recognition</strong>: used to dictate a value. Recognition happens on the device when possible; otherwise, the audio clip is processed by Apple under its terms. Nothing is kept by the app.</li>
+  </ul>
+
+  <h2>7. Notifications, widgets, Apple Watch, Apple TV and lock</h2>
+  <ul>
+    <li><strong>Notifications</strong>: reading reminders and goal alerts are scheduled on the device. No server is used.</li>
+    <li><strong>Widgets and Apple Watch</strong>: they show a summary prepared by the app on your iPhone or Mac; the watch receives it directly from your iPhone.</li>
+    <li><strong>Apple TV</strong>: the app shows the data entered on your other devices, received only from your private iCloud.</li>
+    <li><strong>Lock</strong>: Face ID, Touch ID or the device passcode are checked by the system. The app receives no biometric data.</li>
+  </ul>
+
+  <h2>8. Purchases and subscriptions</h2>
+  <p>ConsoTrack Pro purchases are handled by Apple through the App Store. The developer receives no payment or personal data related to your payments.</p>
+
+  <h2>9. What ConsoTrack does not do</h2>
+  <ul>
+    <li>No user account.</li>
+    <li>No ads and no advertising tracking.</li>
+    <li>No analytics or third-party measurement tools.</li>
+    <li>No selling or sharing of your data.</li>
+    <li>No access to your GPS position, contacts, photos or health data.</li>
+  </ul>
+
+  <h2>10. Your rights</h2>
+  <p>Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, erase and object. As your data stays on your device and in your iCloud, you can view, change, export or delete it directly in the app.</p>
+  <p>For any question: <a href="mailto:support.consotrack@free.fr">support.consotrack@free.fr</a>. You can also file a complaint with the French data protection authority, the <a href="https://www.cnil.fr/en/home">CNIL</a>, or with the authority of your country.</p>
+
+  <h2>11. Contact messages</h2>
+  <p>If you write to the developer from the app, the message contains what you put in it and, for a bug report, the app and system version. These messages are used only to reply to you and are deleted once the request is handled.</p>
+
+  <h2>12. Changes</h2>
+  <p>This policy may change along with the app. The date of the last update is shown at the top of this page.</p>
+  <p class="note">This is a translation of the French policy, which prevails in case of discrepancy.</p>
+
+  <footer><a href="index.html" data-keep-lang>ConsoTrack</a><a href="conditions.html" data-keep-lang>Terms of Use</a></footer>
+  </article>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <article class="doc" lang="es" data-title="Privacidad – ConsoTrack">
+  <h1>Política de privacidad</h1>
+  <p class="meta">App ConsoTrack para iPhone, iPad, Mac, Apple Watch y Apple TV · Última actualización: 16 de octubre de 2026</p>
+
+  <section class="summary">
+    <h2>En resumen</h2>
+    <ul>
+      <li>ConsoTrack no requiere ninguna cuenta y no muestra publicidad.</li>
+      <li>Tus lecturas, compras, tarifas, objetivos y ajustes se guardan en tu dispositivo y, si lo activas, en tu iCloud privado. El desarrollador nunca los recibe.</li>
+      <li>La app no contiene ninguna herramienta de medición de audiencia ni de seguimiento publicitario.</li>
+      <li>Para cierta información pública (precios de los carburantes, tiempo, tarifas reguladas…), la app consulta servicios de datos abiertos. Reciben como máximo tu código postal, nunca tus consumos.</li>
+    </ul>
+  </section>
+
+  <h2>1. Desarrollador y contacto</h2>
+  <p>ConsoTrack está publicada por <strong>Dominique BAUMONT</strong>, a título personal. El desarrollador es responsable del tratamiento de los mensajes que se le envían.</p>
+  <p>Para cualquier pregunta sobre tus datos: <a href="mailto:support.consotrack@free.fr">support.consotrack@free.fr</a>.</p>
+  <p>El desarrollador no utiliza ningún servidor para ConsoTrack y no recoge ningún dato personal de sus usuarios.</p>
+
+  <h2>2. Datos guardados en tu dispositivo</h2>
+  <p>Para funcionar, la app guarda en tu dispositivo:</p>
+  <ul>
+    <li>tus categorías de consumo (electricidad, gas, agua, carburante, leña…) y sus subcontadores;</li>
+    <li>tus lecturas de contador, compras, salidas de stock, notas y, si las haces, las fotos de tus contadores;</li>
+    <li>tus tarifas, términos fijos, objetivos de gasto y recordatorios;</li>
+    <li>la ficha de tu vivienda si la rellenas (país, código postal, municipio, superficie, número de personas, equipos…);</li>
+    <li>tus ajustes (tema, idioma, visualización, bloqueo…).</li>
+  </ul>
+  <p>Estos datos siguen bajo tu control. Puedes exportarlos o borrarlos desde Ajustes › Datos y exportación. Eliminar la app los borra del dispositivo.</p>
+
+  <h2>3. iCloud (opcional)</h2>
+  <p>Si la sincronización con iCloud está activada, tus datos de ConsoTrack se copian en <strong>tu espacio privado de iCloud</strong>, gestionado por Apple, para estar disponibles en tus otros dispositivos. El desarrollador no tiene acceso a ellos. Las fotos de contadores se quedan en el dispositivo que las tomó.</p>
+  <p>Puedes desactivar la sincronización en Ajustes › iCloud y sincronización. Para eliminar tus datos de iCloud: Ajustes del iPhone › tu nombre › iCloud › Gestionar almacenamiento › ConsoTrack.</p>
+
+  <h2>4. Servicios externos utilizados</h2>
+  <p>Estos servicios solo se consultan cuando se pide la información (por ti o por el asistente), según el país de tu vivienda. Como en cualquier conexión a Internet, cada uno ve la dirección IP de tu conexión. <strong>Ninguno recibe tus lecturas ni tus gastos.</strong></p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Información</th><th scope="col">Fuentes</th><th scope="col">Qué se envía</th></tr></thead>
+    <tbody>
+      <tr><td>Municipio y coordenadas de la vivienda</td><td>geo.api.gouv.fr (Francia), Open-Meteo Geocoding (otros países)</td><td>El código postal introducido en la ficha de la vivienda.</td></tr>
+      <tr><td>Tiempo pasado y previsiones</td><td>Open-Meteo</td><td>Las coordenadas aproximadas del municipio (no tu posición GPS).</td></tr>
+      <tr><td>Precios de los carburantes</td><td>data.economie.gouv.fr (Francia), Ministerio para la Transición Ecológica (España), datos abiertos de los distribuidores (Reino Unido), EIA (Estados Unidos)</td><td>El código postal o la región, y el carburante buscado.</td></tr>
+      <tr><td>Tarifas reguladas, color Tempo, mix eléctrico, datos de gas</td><td>ODRE (RTE, Enedis, GRDF), CRE, api-couleur-tempo.fr, GRDF Open Data, Red Eléctrica, Elia, Carbon Intensity API, Octopus Energy, EIA</td><td>Nada sobre ti: solo la fecha o la zona solicitada.</td></tr>
+      <tr><td>Comparación con hogares similares (Francia)</td><td>ODRE (consumos publicados por mancomunidad, Enedis y GRDF)</td><td>El código de tu mancomunidad. La comparación con tu consumo se hace en el dispositivo.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Los mapas de las gasolineras se abren en Mapas de Apple, según las condiciones de Apple.</p>
+
+  <h2>5. Asistente e inteligencia artificial</h2>
+  <p>El asistente y los resúmenes funcionan con <strong>Apple Intelligence</strong>, totalmente en tu dispositivo: tus preguntas y tus datos no se envían a ningún servicio de inteligencia artificial. Sin Apple Intelligence, las respuestas las calcula la propia app, en el dispositivo.</p>
+
+  <h2>6. Cámara, micrófono y reconocimiento de voz</h2>
+  <ul>
+    <li><strong>Cámara</strong>: sirve para leer un contador. La imagen se analiza en el dispositivo. La foto del contador solo se conserva si guardas la lectura, y solo en el dispositivo.</li>
+    <li><strong>Micrófono y reconocimiento de voz</strong>: sirven para dictar un valor. El reconocimiento se hace en el dispositivo cuando es posible; si no, Apple procesa el fragmento de audio según sus condiciones. La app no conserva nada.</li>
+  </ul>
+
+  <h2>7. Notificaciones, widgets, Apple Watch, Apple TV y bloqueo</h2>
+  <ul>
+    <li><strong>Notificaciones</strong>: los recordatorios de lectura y los avisos de objetivo se programan en el dispositivo. No se utiliza ningún servidor.</li>
+    <li><strong>Widgets y Apple Watch</strong>: muestran un resumen preparado por la app en tu iPhone o tu Mac; el reloj lo recibe directamente de tu iPhone.</li>
+    <li><strong>Apple TV</strong>: la app muestra los datos introducidos en tus otros dispositivos, recibidos únicamente de tu iCloud privado.</li>
+    <li><strong>Bloqueo</strong>: Face ID, Touch ID o el código del dispositivo los comprueba el sistema. La app no recibe ningún dato biométrico.</li>
+  </ul>
+
+  <h2>8. Compras y suscripciones</h2>
+  <p>Las compras de ConsoTrack Pro las gestiona Apple a través del App Store. El desarrollador no recibe ningún dato bancario ni personal relacionado con tus pagos.</p>
+
+  <h2>9. Lo que ConsoTrack no hace</h2>
+  <ul>
+    <li>Sin cuenta de usuario.</li>
+    <li>Sin publicidad ni seguimiento publicitario.</li>
+    <li>Sin medición de audiencia ni herramientas de análisis de terceros.</li>
+    <li>Sin venta ni cesión de tus datos.</li>
+    <li>Sin acceso a tu posición GPS, tus contactos, tus fotos ni tus datos de salud.</li>
+  </ul>
+
+  <h2>10. Tus derechos</h2>
+  <p>De acuerdo con el Reglamento General de Protección de Datos (RGPD), tienes derecho de acceso, rectificación, supresión y oposición. Como tus datos se quedan en tu dispositivo y en tu iCloud, puedes consultarlos, modificarlos, exportarlos o eliminarlos directamente en la app.</p>
+  <p>Para cualquier pregunta: <a href="mailto:support.consotrack@free.fr">support.consotrack@free.fr</a>. También puedes presentar una reclamación ante la autoridad francesa de protección de datos, la <a href="https://www.cnil.fr/en/home">CNIL</a>, o ante la de tu país (en España, la <a href="https://www.aepd.es">AEPD</a>).</p>
+
+  <h2>11. Mensajes de contacto</h2>
+  <p>Si escribes al desarrollador desde la app, el mensaje contiene lo que pongas en él y, en un aviso de error, la versión de la app y del sistema. Estos mensajes solo sirven para responderte y se eliminan una vez atendida la solicitud.</p>
+
+  <h2>12. Cambios</h2>
+  <p>Esta política puede cambiar con la app. La fecha de la última actualización figura al principio de esta página.</p>
+  <p class="note">Esta es una traducción de la política en francés, que prevalece en caso de discrepancia.</p>
+
+  <footer><a href="index.html" data-keep-lang>ConsoTrack</a><a href="conditions.html" data-keep-lang>Condiciones de uso</a></footer>
+  </article>
 </main>
+<script src="legal.js"></script>
 </body>
 </html>

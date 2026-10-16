@@ -32,3 +32,15 @@ th { color: var(--muted); font-weight: 600; }
 .cards a span { color: var(--muted); }
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
 footer a { margin-right: 14px; }
+.topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 36px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; }
+.brand img { border-radius: 8px; }
+.languages { display: flex; gap: 4px; }
+.languages button { font: inherit; font-size: 14px; color: var(--ink); background: transparent; border: 1px solid transparent;
+                    border-radius: 9px; padding: 6px 8px; cursor: pointer; }
+.languages button span { font-size: 11px; font-weight: 650; }
+.languages button[aria-pressed="true"] { background: var(--surface); border-color: var(--line); }
+.note { color: var(--muted); font-size: 0.92rem; font-style: italic; }
+.doc { display: none; }
+html:not([data-lang]) .doc[lang="fr"], html[data-lang="fr"] .doc[lang="fr"],
+html[data-lang="en"] .doc[lang="en"], html[data-lang="es"] .doc[lang="es"] { display: block; }
