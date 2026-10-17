@@ -29,3 +29,31 @@
 @media(max-width:1100px) and (min-width:801px){.hero h1{font-size:60px}.ecosystem-art .front{width:155px;left:0}.hero-mac{right:-15px}.hero-watch{right:0}}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px;padding-bottom:35px;gap:15px;min-height:0}.hero-copy{max-width:560px}.hero h1{font-size:clamp(47px,10vw,70px);letter-spacing:-2.7px}.hero .lead{font-size:15px;max-width:100%}.hero .actions{gap:26px}.hero .promise{gap:10px}.hero-copy>.eyebrow{font-size:10px;letter-spacing:2px}.hero .platforms{margin-top:25px;padding-top:20px}.ecosystem-art{height:570px;max-width:500px;margin-top:10px}.hero-mac{top:30px;right:0;left:0}.ecosystem-art .front{width:155px;top:190px;left:18px}.hero-watch{right:22px;bottom:95px}.hero-watch .watch-mockup{margin:23px 0}.ecosystem-art .floating{right:0;bottom:28px}.ecosystem-art .art-caption{bottom:0;font-size:7px;letter-spacing:.5px}.platform-chips a{font-size:11px;padding:8px 10px}}
 @media(max-width:400px){.ecosystem-art{height:520px}.ecosystem-art .front{top:160px;width:145px;left:12px}.hero-watch{bottom:100px}.hero-mac{top:20px}}
+
+/* Soft device motion, with a staggered entrance and a quiet hover response. */
+@media(prefers-reduced-motion:no-preference){
+ .ecosystem-art{animation:device-scene-in 1.1s ease-out both}
+ .ecosystem-art .hero-mac{animation:device-drift 8s ease-in-out infinite;animation-delay:-2s}
+ .ecosystem-art .front{animation:device-drift 6.5s ease-in-out infinite;animation-delay:-.8s}
+ .ecosystem-art .hero-watch{animation:device-drift 7.2s ease-in-out infinite;animation-delay:-3.5s}
+ .ecosystem-art .floating{animation:device-drift 9s ease-in-out infinite;animation-delay:-4s}
+ .capture-card{transition:opacity .7s ease,transform .65s cubic-bezier(.2,.7,.3,1),box-shadow .3s,border-color .3s}
+ .capture-card:nth-child(2){transition-delay:.08s;--device-delay:-1.4s}
+ .capture-card:nth-child(3){transition-delay:.16s;--device-delay:-3s}
+ .capture-card:nth-child(4){transition-delay:.24s;--device-delay:-4.2s}
+ .capture-card:nth-child(5){transition-delay:.32s}
+ .capture-card .capture-image>img,.capture-card .watch-mockup{animation:thumbnail-drift 7s ease-in-out infinite;animation-delay:var(--device-delay,0s)}
+ .capture-card:not(.visible) .capture-image>img,.capture-card:not(.visible) .watch-mockup{animation-play-state:paused}
+ @keyframes device-scene-in{from{opacity:0}to{opacity:1}}
+ @keyframes device-drift{0%,100%{translate:0 0}50%{translate:0 -11px}}
+ @keyframes thumbnail-drift{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -5px;rotate:.8deg}}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .capture-card.visible:hover{transform:translateY(-6px);box-shadow:0 14px 30px #204c9317;border-color:#9db9ec;transition-delay:0s}
+ .capture-card:hover .capture-image>img,.capture-card:hover .watch-mockup{animation-play-state:paused}
+ .ecosystem-art .hero-mac,.ecosystem-art .front,.ecosystem-art .hero-watch{transition:filter .3s}
+ .ecosystem-art .hero-mac:hover,.ecosystem-art .front:hover,.ecosystem-art .hero-watch:hover{animation-play-state:paused}
+}
+@media(max-width:800px) and (prefers-reduced-motion:no-preference){
+ @keyframes device-drift{0%,100%{translate:0 0}50%{translate:0 -7px}}
+}
